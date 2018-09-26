@@ -197,9 +197,37 @@ p.info-text {
 }
 
 .footer-mynd {
+    background-size: cover;
     height: 29px;
+    width: 29px;
     margin: 0 7px;
 }
+.twitter{
+    background-image: url('../img/twitter.png');
+}
+.facebook{
+    background-image: url('../img/facebook.png');
+}
+.instagram{
+    background-image: url('../img/instagram.png');
+}
+.pinterest{
+    background-image: url('../img/pinterest.png');
+}
+.twitter:hover{
+    background-image: url('../img/twitter_hover.png');
+}
+.facebook:hover{
+    background-image: url('../img/facebook_hover.png');
+}
+.instagram:hover{
+    background-image: url('../img/instagram_hover.png');
+}
+.pinterest:hover{
+    background-image: url('../img/pinterest_hover.png');
+}
+
+
 
 /* Vörum skipt niður í flex */
 .voru-content-duo {
