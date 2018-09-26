@@ -1,0 +1,39 @@
+/* Gerir header og components í navbar að að flex containers */
+
+
+
+/* Child af voru-content */
+.vara {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 552px;
+    width: 280px;
+    margin: 12px 10px;
+}
+
+/* Heitir hér buy en er bæði kaupa og read more hnappaútlit */
+.buy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Upplýsingatexti undir vörum */
+.other-content {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    align-self: center;
+    margin: auto;
+    justify-content: center;
+}
+
+/* Child af other-content */
+.info {
+    display: flex;
+    flex-direction: column;
+    height: 554px;
+    min-width: 577px;
+    justify-content: center;
+}

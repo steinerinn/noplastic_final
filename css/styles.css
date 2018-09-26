@@ -1,0 +1,293 @@
+/* ================================= 
+  Base Styles
+==================================== */
+
+/* Typical body elements */
+* {
+    box-sizing: border-box;
+    /* Undirlína ofl teknir af links */
+    text-decoration: none;
+}
+
+/* Font family yfir allar síður */
+body {
+    font-family: 'Rubik', sans-serif;
+}
+
+/* Dropshadow undir navbar */
+
+
+
+.front-page {
+    background-image: url(../img/main-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+/* Texti í forsíðumynd og shop now hnappur */
+
+.title-button {
+    display: flex;
+    flex-direction: column;
+    padding-top: 52vh;
+    padding-left: 50%;
+}
+
+#front-button {
+    box-shadow: none;
+    border: 1px solid #C2A2A0;
+}
+
+/* Heading texti í forsíðumynd mynd */
+ h1.front-title-text{
+    font-style: normal;
+    font-weight: normal;
+    line-height: 120px;
+    font-size: 64px;
+    text-align: center;
+    color: #787878;
+    margin-bottom: 20px;
+}
+
+/* Almennt fyrir h2 */
+h2.h2-centered,
+h2.h2-normal {
+    font-style: normal;
+    font-weight: 300;
+    line-height: 94px;
+    font-size: 50px;
+    color: #000000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+h2.h2-centered {
+    text-align: center;
+    padding: 63px 0 59px;
+}
+
+h2.h2-normal {
+    padding: 0 0 59px;
+}
+
+/* Bil sett svo texti klessist ekki við mynd */ 
+.second {
+    padding-left: 120px;
+}
+
+/* Texti á forsíðu */
+.info-text {
+    font-style: normal;
+    font-weight: normal;
+    line-height: 32px;
+    font-size: 24px;
+    max-width: 350px;
+    margin: -20px 0 90px;
+    color: #000000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* Bleikur takkarnir stórir  */
+.btn-holder{
+    margin:0 auto;
+}
+.btn-holder .btn{
+    color: #fff;
+    padding: 10px 25px;
+    background-color: #DDBFBD;
+    border: 3px solid #DDBFBD;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    font-size: 24px;
+}
+.btn-holder .btn:hover{
+    background-color: white;
+    color: #DDBFBD;
+    box-shadow: none;
+}
+/*Grænu takkarnir stórir */
+
+.btn-holder-green .btn-green{
+    color: #fff;
+    padding: 10px 35px;
+    background-color: #5D9699;
+    border: 3px solid #5D9699;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    font-size: 24px;
+}
+.btn-holder-green .btn-green:hover{
+    background-color: white;
+    color: #5D9699;
+    box-shadow: none;
+}
+
+ /* Stillingar á vöruglugga */
+.vara {
+    padding-top: 20px;  /* Svo vörurnar klessist ekki við rammann á top */
+    border: 3px solid #DDBFBD;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+.vara:hover {
+    padding-top: 16px; /* Stoppar hökt í innihaldi þegar hoverað er yfir */
+    border: 7px solid #DDBFBD;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.25);
+}
+
+.vara-text,
+.vara-price {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    font-size: 24px;
+    text-align: center;
+    color: #000000;
+}
+
+.vara-price {
+    font-weight: normal;
+    margin-bottom: 40px;
+}
+
+.info {
+    width: 43%;
+}
+
+/* Bilið á milli vara og infoglugga */ 
+.other-content {
+    padding-top: 50px;
+}
+
+/* myndir í info gluggum */
+.first {
+    background-image: url(../img/plastics.jpg);
+    background-repeat: no-repeat;
+}
+
+.fourth {
+    background-image: url(../img/bakan.jpg);
+    background-repeat: no-repeat;
+}
+
+/* paragraph textinn í info gluggum */
+p.info-text {
+    font-size: 30px;
+}
+
+/* Er í einhverju veseni með að koma iconunum í vertical align middle */
+.main-footer {
+    height: 70px;
+    background-color: #BDCECF;
+    margin-top: 90px;
+    width:100%;
+    vertical-align: middle; /* Skoða hvað veldur að þetta virkar ekki */
+   
+   
+}
+.footer-content{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-mynd {
+    height: 29px;
+    margin: 0 7px;
+}
+
+/* Vörum skipt niður í flex */
+.voru-content-duo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+}
+
+/* Stillingar á myndum í ramma */
+.vara-mynd {
+    align-self: center; /* kemur í veg fyrir að myndit "strekkist" */
+    height: 300px; /* Myndir voru of stórar */
+    margin-bottom: 30px; /* Ýta takka aðeins frá verðinu */
+    outline: none;
+}
+
+/* Safn af vörum með verðmiða */
+.voru-content {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    align-self: center;
+    margin: auto;
+    justify-content: center;
+}
+
+.vara-texti {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin: auto;
+    justify-content: center;
+    max-width: 1400px;
+}
+
+/* Fyrsta media query kemur þegar fyrsti vörugluggi fellur niður */
+@media (max-width:1220px) {
+
+    .voru-content,
+    .other-content {
+        flex-direction: column;
+    }
+
+    /* Röðun á efni í other content */
+    .first {
+        order: -2; /* Passa að þetta sé efst */
+    }
+
+    .second {
+        order: -1; /* Passa að þetta koma á eftir first */
+        padding-left: 0px; /* Fjarlægi padding svo textinn verðir eins og í third */
+    }
+
+    .third { 
+        order: 1; /* Passa að þetta verða á eftir fourth, verði neðst */
+    }
+
+    .fourth {
+        order: 0; /* Passa að þetta verði á eftir second */
+    }
+
+    .title-button {
+        padding: 100px 0 0;
+    }
+}
+
+/* 600px er til að laga other content á forsíðu */
+@media (max-width:600px) {
+    .info {
+        min-width: 0;
+        width: auto;
+    }
+
+    .f-mynd {
+        width: 100%;
+    }
+
+}
+
+@media (max-width:420px) {
+    /* Verið að staðsetja og breyta forsíðutexta á forsíðumynd */
+    h1.front-title-text {
+        font-size: 44px;
+        line-height: 60px;
+        margin-bottom: 20px;
+    }
+
+}

@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body {
+    font-family: 'Rubik', sans-serif;
+}
+/* ----------CONTAINER--------------*/
+.container {
+	background-color: #fff;
+	height: 100vh;
+	width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* ----------MAIN CONTANT--------------*/
+.main_text {
+	background-color: #DDBFBD;
+	width: 100%;
+	height: 300px;
+	display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.main_text h1{
+	color: #787878;
+	font-size: 70px;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 300;
+}
+/* ----------MEDIA--------------*/ 
+@media only screen and (max-width: 780px) {
+    .main_text h1 {
+	font-size: 40px;
+	}
+	@media only screen and (max-width: 480px) {
+    .main_text h1 {
+	font-size: 20px;
+    }
+}

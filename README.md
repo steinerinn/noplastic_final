@@ -1,2 +1,2 @@
-# noplastic_final
-Loka útgáfan. Aðeins unnið þegar öll eru saman!
+# NoPlastic
+Verkefnalota 1 - Fyrsta önn -Vefskólinn

@@ -1,0 +1,278 @@
+/* ================================= 
+  Base Styles
+==================================== */
+
+/* Typical body elements */
+/* Typical body elements */
+* {
+    box-sizing: border-box;
+    /* Undirlína ofl teknir af links */
+    text-decoration: none;
+}
+
+/* Font family yfir allar síður */
+body {
+    font-family: 'Rubik', sans-serif;
+}
+
+
+
+/* Almennt fyrir h2 */
+h2.h2-centered,
+h2.h2-normal {
+    font-style: normal;
+    font-weight: 300;
+    line-height: 94px;
+    font-size: 50px;
+    color: #000000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+h2.h2-centered {
+    text-align: center;
+    padding: 63px 0 59px;
+}
+
+h2.h2-normal {
+    padding: 0 0 59px;
+}
+
+.main-footer {
+    height: 70px;
+    background-color: #BDCECF;
+    /* margin-top: 90px; */
+    width:100%;
+    vertical-align: middle; /* Skoða hvað veldur að þetta virkar ekki */
+   
+   
+}
+.footer-content{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.footer-mynd {
+    height: 29px;
+    margin: 0 7px;
+}
+/***** CART SÍÐA - TABLES *****/
+
+/* efri hluti af carti "CART ITEMS" */
+
+.cart_container {
+    margin-top: 75px;
+}
+.cart_container h2 {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    font-size: 50px;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+}
+.cart_items {
+    width: 80%;
+    margin: 0 auto;
+}
+td.product_img {
+    width: 10%;
+}
+div.img_frame {
+    background:transparent;
+    padding: 5px;
+    border: 2px solid #DDBFBD;
+    border-radius: 15px;
+    width: 70px;
+}
+.cart_items td img {
+    height: 55px;
+}
+.cart_items tr th {
+    font-size: 20px;
+    font-weight: 300;
+    background-color: #DDBFBD;
+    text-transform: uppercase;
+    height: 40px;
+    vertical-align: middle;
+    padding: 0px 10px;
+}
+.cart_items tr td {
+    font-size: 18px;
+    font-weight: 300;
+    height: 60px;
+    border-bottom: 3px solid #DDBFBD;
+    vertical-align: middle;
+    padding: 5px 5px;
+}
+/*stærðin á myndunum inní rammanum*/
+.cart_items td img {
+    height: 55px;
+}
+/*padding vinstra megin í table*/
+.cart_items td.product_img {
+    padding-left: 20px;
+}
+.cart_items th.product {
+    text-align: left;
+    padding-left: 20px;
+}
+/*centera verðið og magnið
+til að búa til + og - gaurana*/
+td.price  {
+    text-align: center;
+}
+td.quantity {
+    text-align: center;
+    width: 30px; 
+}
+p.quantity {
+    border: 2px solid #DDBFBD;
+    border-radius: 10px;
+    padding: 10px 5px;
+}
+td.quantity_add,
+td.quantity_remove {
+    text-align: center;
+    width: 5%;
+}
+/* total dálkur - til að fá stærra padding á hægri endann á table*/
+.cart_items td.total,
+.cart_items th.total {
+    text-align: right;
+    padding-right: 20px;
+}
+/* neðri table af cartinu "TOTAL"*/
+.cart_total {
+    font-size: 20px;
+    font-weight: 300;
+    width: 300px;
+    margin: 20px auto;
+}
+.cart_total tr td, th {
+    border-top: 2px solid #DDBFBD;
+    padding: 5px 5px;
+}
+.final_total {
+    text-align: left;
+}
+.order_total, .currency {
+    text-align: right;
+}
+.cart_total th {
+    background-color: #DDBFBD;
+    font-weight: 400;
+}
+/****** CART BUTTONS ******/
+
+.cart_btn_holder{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+.cont_shop_btn{
+    color: #DDBFBD;
+    padding: 10px 15px;
+    background-color: #fff;
+    border: 3px solid #DDBFBD;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.cont_shop_btn:hover{
+    background-color: #DDBFBD;
+    color: #fff;
+}
+.checkout_btn{
+    color: #fff;
+    padding: 10px 15px;
+    background-color: #DDBFBD;
+    border: 3px solid #DDBFBD;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.checkout_btn:hover{
+    background-color: white;
+    color: #DDBFBD;
+}
+
+/* Fyrsta media query kemur þegar fyrsti vörugluggi fellur niður */
+@media (max-width:1220px) {
+
+    .voru-content {
+        flex-direction: column;
+    }
+
+    /* Röðun á efni í other content */
+    .first {
+        order: -2; /* Passa að þetta sé efst */
+    }
+
+    .second {
+        order: -1; /* Passa að þetta koma á eftir first */
+        padding-left: 0px; /* Fjarlægi padding svo textinn verðir eins og í third */
+    }
+
+    .third { 
+        order: 1; /* Passa að þetta verða á eftir fourth, verði neðst */
+    }
+
+    .fourth {
+        order: 0; /* Passa að þetta verði á eftir second */
+    }
+
+    .title-button {
+        padding: 15% 0 0;
+    }
+}
+
+@media (max-width:600px) {
+    .cont_shop_btn{
+        font-size: 16px;
+        border-radius: 15px;
+    }
+    .checkout_btn{
+        font-size: 16px;
+        border-radius: 15px;
+    }
+    .cart_items tr th {
+        font-size: 16px;
+        height: 35px;
+    }
+    .cart_items tr td {
+        font-size: 16px;
+    }
+    .cart_items td.product_img,
+    .cart_items th.product {
+        padding-left: 10px;
+    }
+    .cart_items td.total,
+    .cart_items th.total {
+        padding-right: 10px;
+    }
+    .cart_btn_holder{
+        width: 90%;
+        padding-bottom: 20px;
+    }
+    .cart_items {
+        width: 90%;
+    }
+    p.quantity {
+        font-size: 16px;
+        padding: 10px 0px;
+    }
+    .cart_container h2 {
+        margin-top: 95px;
+        margin-bottom: 15px;
+        font-size: 45px;
+    }
+}
+@media (max-width:450px) {
+
+}

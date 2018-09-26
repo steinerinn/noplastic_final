@@ -1,0 +1,248 @@
+
+header nav{
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 60%, rgba(255,255,255,0.9), rgba(255,255,255,0.8)); /* Fade out pælingin í navbar */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 80px;
+    position: fixed; /* Set navbar í fixed position */
+    top: 0; /* Staðsett á toppnum */
+    width: 100%; /* Full width, annars fellur flexið saman*/
+    z-index: 50;
+}
+header nav .nav_content{
+	display: flex;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+	justify-content: space-between;
+	
+
+}
+
+header nav .first-nav-list{
+	display: flex;
+}
+header nav ul{
+	
+	flex-direction: row !important;
+
+}
+/* Navbar linkar skilgreindir */
+header nav ul li a{
+	text-decoration: none;
+	font-size: 20px;
+	margin-left: 41px; /* Bil á milli hnappa í navbar */
+	line-height: 37px;
+	text-transform: uppercase;
+	 color: #363636;
+   
+}
+header nav ul li a:hover {
+	color: #ddbfbd;
+  
+  
+}
+a svg:hover #sign-svg,
+a svg:hover #cart-svg {
+    fill: #DDBFBD;
+}
+.dropdown-content a:hover ,
+.nav_icon:hover, li a:hover,
+.btn-green:hover,
+.btn:hover { 
+  transition: 200ms;
+  transition-timing-function: ease-in-out;
+  -webkit-transition: 200ms;
+  -webkit-transition-timing-function: ease-in-out;
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: 20px;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a{
+	border: 2px solid #DDBFBD;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.dropdown-content a:hover {
+	background-color: #DDBFBD;
+	color: #fff;
+}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+.active{
+	text-decoration: underline;
+}
+/* Stillingar á navbar í header */
+header nav .logo-holder{
+	display: flex;
+	width: 200px;
+	margin-right: 80px;
+}
+ /* Þetta er til að stilla staðsetningu á logo og miðjusetja alveg (lagast fyrir lokaskil) */
+header nav .logo{
+	display: flex;
+	height: 65px;
+	}
+header nav .icon-holder{
+	display: flex;
+	position: relative;
+	right: 50px;
+}
+header nav .nav_icon{
+
+	margin:0px 15px;
+}
+.icon_1{
+	background-image: url(../img/signin.png);
+	background-size: cover;
+	height: 36px;
+	width: 36px;
+}
+.icon_2{
+	background-image: url(../img/cart.png);
+	background-size: cover;
+	height: 36px;
+	width: 36px;
+}
+.icon_1:hover{
+background-image: url(../img/signin_hover.png);
+}
+.icon_2:hover{
+	background-image: url(../img/cart_hover.png);
+}
+
+.hamburger-icon{
+	font-size: 50px;
+	display: none;
+}
+
+/* Kóði til að leiðrétta breytingar ef notaður er takki til þess að fá dropdown og síðan aftur til að fela og maður stækkar hverfur allt */
+@media(min-width: 768px){
+	.icon-holder{
+		border: none !important;
+		display: flex !important;
+	}
+	nav ul {
+		display: flex !important;
+	}
+	.nav_icon{
+		display: inline-block !important;
+	}
+	.hamburger-icon{
+	
+	display: none !important;
+	}
+	.x-icon{
+		display: none !important;
+	}
+
+
+}
+@media(max-width: 768px){
+	
+	header nav{
+		position: relative;
+	}
+	.hamburger-icon{
+		display: inline-block;
+		position: absolute;
+		right: 50px;
+		top:50%;
+		transform: translate(-0%,-50%);
+		cursor: pointer;
+	}
+	.x-icon{
+		font-size: 70px;
+		position: absolute;
+		right: 50px;
+		top:50%;
+		transform: translate(-0%,-50%);
+		cursor: pointer;
+		
+	}
+	.logo-holder{
+		position: absolute;
+		left: 50px;
+		top:50%;
+		transform: translate(-0%,-50%)
+	}
+	.nav_content{
+		order:1;
+		flex-direction: column;
+		position: relative;
+
+
+	}
+	.dropdown-content {
+		width: 100%;
+		left: 0px;
+		z-index: 6;
+	}
+	.dropdown-content a{
+		height: 57px;
+		z-index: 5;
+	}
+	header nav ul, .icon-holder{
+		margin-top:80px;
+	}
+	header nav ul li{
+		border: 1px solid black;
+		margin-top: 1px;
+		background-color: #fff;
+}
+	.icon-holder{
+		width: 100%;
+		background-color: #fff !important;
+		height: 200px;
+		z-index: 3;
+		position: relative;
+		left: 0px;
+		top:110px;
+		display: block !important;
+		border:1px solid black;
+		
+	}
+	.nav_icon{
+		position: relative;
+		left: 40%;
+		transform:translate(-40%,0%);
+
+}
+			
+	header nav ul li a{
+		line-height: 60px;
+	}
+	header nav ul{
+		flex-direction: column !important;
+		position: relative;
+		left: 0px;
+		width: 100%;
+}
+header nav .close{
+	display: none;
+	border:none;
+}
+	
+}
