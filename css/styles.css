@@ -272,6 +272,9 @@ p.info-text {
     .info {
       width: 100%;
     }
+    .second, .third, .forth{
+        padding-bottom: 350px;
+    }
   
    
 
