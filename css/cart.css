@@ -18,7 +18,7 @@ body {
 /* efri hluti af carti "CART ITEMS" */
 
 .cart_container {
-    margin-top: 75px;
+    padding-top: 75px;
 }
 .cart_container h2 {
     margin-top: 100px;
