@@ -192,13 +192,14 @@ form .form_rows input {
 }
 
 .pink_content img {
-    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
 }
    /* border: 3px solid #D1AEAC;
     border-radius: 20px;
     padding: 8px;
     background: white;
- */
+ Tekið út fyrir final*/
 .pink_content tbody tr td:nth-child(1) {
     width: 70px;
 }
@@ -235,6 +236,11 @@ tbody tr.cart_total td {
     background: white;
     padding: 7px;
     margin-bottom: 10px;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .pink_content .cart-center {
     display: flex;
