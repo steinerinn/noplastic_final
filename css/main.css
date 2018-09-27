@@ -67,6 +67,7 @@ body {
     width: 100%;
     font-size: 14px;
     margin: 10px 0 30px 0; 
+    color: #363636;  
 }
 /* --------------Cheackbox STYLING--------------*/
 .box_container {
@@ -146,9 +147,10 @@ form .form_rows input {
 }
 /*--------------White BUTTON--------------*/ 
 .buttons {
-    margin-bottom: 100px;
+    margin-bottom: 70px;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 .white_content button {
     border-radius: 20px;
@@ -158,10 +160,9 @@ form .form_rows input {
     font-size: 16px;
     text-transform: uppercase; 
     border: 3px solid #DDBFBD; 
-    display: inline;
 }
 .white_content button[type=submit] {
-    margin-left: 40px;
+    margin-left: 20px;
 }
 .white_content button:hover {
     background-color: #fff;
@@ -177,22 +178,27 @@ form .form_rows input {
     flex-direction: column;
 }
 .pink_content {
-    width: 80%;
+    width: 85%;
     height: 45%;
-    margin: auto;   
+    margin: auto;
+    color: #363636;   
 }
 .pink_content table{
     width: 90%;
 }
 /* --------------Pink Mr. Bamboo--------------*/ 
 .pink_content tbody td {
-    line-height: 30px;
+    line-height: 40px;
 }
+
 .pink_content img {
     width: 100%;
-    border: 3px solid #D1AEAC;
-    border-radius: 20px;
 }
+   /* border: 3px solid #D1AEAC;
+    border-radius: 20px;
+    padding: 8px;
+    background: white;
+ */
 .pink_content tbody tr td:nth-child(1) {
     width: 70px;
 }
@@ -203,23 +209,55 @@ form .form_rows input {
 .pink_content tbody tr td:nth-child(3) {
     text-align: end;
 }
+/*--------------Final Pink Cart breyting--------------*/
+.pink_content {
+   font-size: 18px;
+}
+.pink_content td a:hover {
+    text-decoration: underline;
+}
+.pink_content td .pink_text a {
+    color: #363636;
+    padding-left: 15px;
+}
+.bottom_table tbody tr td {
+    font-weight: 300;
+}
+tbody tr.cart_total td {
+    font-weight: 400;
+}
+.bottom_table tbody tr td:nth-child(2) {
+    margin-left: 10px;
+}
+.pink_img {
+    border: 3px solid #D1AEAC;
+    border-radius: 15px;
+    background: white;
+    padding: 7px;
+    margin-bottom: 10px;
+}
+.pink_content .cart-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 /*--------------Pink Total--------------*/ 
-.buttom_table {
+.bottom_table {
     width: 90%;
     padding: 50px 0;
     display: flex;
     justify-content: center;
-    border-top: 4px solid #787878;
+    border-top: 3px solid #787878;
 }
-.buttom_table table {
+.bottom_table table {
     width: 50%;
     line-height: 30px;
 }
-.buttom_table tr td:nth-child(2) {
+.bottom_table tr td:nth-child(2) {
     text-align: right;
 }
-.buttom_table tr td {
-    border-top: 3px solid #787878; 
+.bottom_table tr td, th {
+    border-top: 2px solid #787878; 
 }
 /* --------------MEDIA--------------*/ 
 @media only screen and (max-width: 930px) {
@@ -227,7 +265,7 @@ form .form_rows input {
     width: 70%; 
     }
 }
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 870px) {
     .container {
     display: flex; 
     flex-direction: column;
@@ -252,7 +290,7 @@ form .form_rows input {
     }
 }
 @media only screen and (max-width: 480px) {
-    .buttom_table {
+    .bottom_table {
     width: 100%;
     }
     .white_header img {
