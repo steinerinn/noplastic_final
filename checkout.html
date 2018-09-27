@@ -7,7 +7,6 @@
         <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,700" rel="stylesheet">
         <link rel="icon" href="img/tskoli.ico">
         <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/top_bottom.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/navbar.css">
         <link rel="stylesheet" type="text/css" href="css/styles.css">
@@ -21,11 +20,11 @@
             <div class="nav_content">
                 <ul class="first-nav-list close"">
                    <div class="dropdown">
-                      <li class=""><a href="vorur.html">Products</a></li>
+                      <li class=""><a href="products.html">Products</a></li>
                       <div class="dropdown-content">
-                        <a href="vorur.html">Soap</a>
-                        <a href="vorur.html">Brushes</a>
-                        <a href="vorur.html">Sponges</a>
+                        <a href="products.html">Soap</a>
+                        <a href="products.html">Brushes</a>
+                        <a href="products.html">Sponges</a>
                       </div>
                     </div>
 
@@ -53,7 +52,105 @@
          <div class="divider"></div>
     </header>
 
-		<!--- Ásdís CODE-->
+	<div class="container">
+	    <div class="white">
+	      	<div class="white_header">
+	      		<img src="img/cart.png" alt="cart icon"><span>&#62;</span>
+	      		<img src="img/signin_green.png" alt="sign in icon"><span>&#62;</span>
+	      		<img src="img/shipping.png" alt="shipping icon"><span>&#62;</span>
+	      		<img src="img/payment.png" alt="payment icon"><span>&#62;</span>
+	      		<img src="img/receipt.png" alt="recipt icon">
+	      	</div>
+	      	<div class="white_content">
+	      		<form action="inner">
+		      		<div class="title-white">
+			      		<label for="email">Contact information</label>
+			      		<span>Already have an account<a href="">log in</a></span>	
+		      		</div>
+					<input type="text" name="email" placeholder="Email"> 
+						<div class="offers">
+							<label class="box_container">keep me up to date on news and exclusive offers
+							<input type="checkbox" name="check" checked="checked">
+							<span class="checkmark"></span>
+							</label>
+						</div>
+					<label for="ship">Shipping address</label> 
+						<div class="form_rows">
+							<input type="text" name="name" placeholder="First Name">
+							<input type="text" name="name" placeholder="Last name">
+						</div>
+					<input type="text" name="ship address" placeholder="Address"> 
+					<input type="text" name="ship apartment" placeholder="Apartment, suite, etc. (optional)">
+					<input type="text" name="ship city" placeholder="City"> 
+						<div class="form_rows">
+							<input type="text" name="postal" placeholder="Country">
+							<input type="text" name="postal" placeholder="Postal Code">
+						</div>
+						<div class="save">
+							<label class="box_container">save this information for next time
+							<input type="checkbox" name="check" checked="checked">
+							<span class="checkmark"></span>
+						</div>
+						<div class="buttons">
+							<form action="cart.html" method="get">
+							<button type="back" formaction="cart.html">back to cart</button>
+							<form action="payment_success.html" method="get">
+							<button type="submit" formaction="payment_success.html">continue to shipping method</button>
+							</form>
+						</div>
+	      			</form>
+	      		</div>
+	    	</div>
+
+	   <div class="pink">
+	    	<div class="pink_content">
+	    		<table>
+	    			<tbody>
+	    				<tr>
+	    					<td><img src="img/Brush.jpg" alt="Mr bamboo toothbrush"></td>
+	    					<td>Mr. Bamboo</td>
+	    					<td>$10</td>
+	    					<td class="brush"></td>
+	    				</tr>
+	    				<tr>
+	    					<td><img src="img/Brush.jpg" alt="Mr bamboo toothbrush"></td>
+	    					<td>Mr. Bamboo</td>
+	    					<td>$10</td>
+	    				</tr>
+	    				<tr>
+	    					<td><img src="img/Brush.jpg" alt="Mr bamboo toothbrush"></td>
+	    					<td>Mr. Bamboo</td>
+	    					<td>$10</td>
+	    				</tr>
+	    			</tbody>
+	    		</table>
+	    	</div>	
+	    	<div class="buttom_table">
+	    		<table>
+	    			<tbody>
+	    				<tr>		
+	    					<td>Your order</td>
+	    					<td>$30</td>
+	    				</tr>
+	    				<tr>
+	    					<td>Shipping</td>
+	    					<td>$10</td>
+	    				</tr>
+	    				<tr>
+	    					<td>Tax</td>
+	    					<td>$5</td>
+	    				</tr>
+	    				<tr>
+	    					<td>Total</td>
+	    					<td>$45</td>
+	    				</tr>
+	    			</tbody>
+	    		</table>
+	    	</div>
+	    </div>
+    </div> 		
+
+
 	<footer class="main-footer">
              <div class="footer-content">
                 <a class="footer-mynd twitter" href="https://www.twitter.com" target="_blank"></a>

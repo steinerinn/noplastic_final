@@ -14,10 +14,6 @@ body {
     font-family: 'Rubik', sans-serif;
 }
 
-/* Dropshadow undir navbar */
-
-
-
 .front-page {
     background-image: url(../img/main-banner.jpg);
     background-repeat: no-repeat;
@@ -36,7 +32,6 @@ body {
 }
 
 #front-button {
-    box-shadow: none;
     border: 1px solid #C2A2A0;
 }
 
@@ -59,7 +54,6 @@ h2.h2-normal {
     line-height: 94px;
     font-size: 50px;
     color: #000000;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
 }
 
 h2.h2-centered {
@@ -85,7 +79,6 @@ h2.h2-normal {
     max-width: 350px;
     margin: -20px 0 90px;
     color: #000000;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
 }
 
 /* Bleikur takkarnir stórir  */
@@ -97,14 +90,12 @@ h2.h2-normal {
     padding: 10px 25px;
     background-color: #DDBFBD;
     border: 3px solid #DDBFBD;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     font-size: 24px;
 }
 .btn-holder .btn:hover{
     background-color: white;
     color: #DDBFBD;
-    box-shadow: none;
 }
 /*Grænu takkarnir stórir */
 
@@ -113,14 +104,12 @@ h2.h2-normal {
     padding: 10px 35px;
     background-color: #5D9699;
     border: 3px solid #5D9699;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     font-size: 24px;
 }
 .btn-holder-green .btn-green:hover{
     background-color: white;
     color: #5D9699;
-    box-shadow: none;
 }
 
  /* Stillingar á vöruglugga */
@@ -134,7 +123,6 @@ h2.h2-normal {
 .vara:hover {
     padding-top: 16px; /* Stoppar hökt í innihaldi þegar hoverað er yfir */
     border: 7px solid #DDBFBD;
-    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.25);
 }
 
 .vara-text,
@@ -154,7 +142,7 @@ h2.h2-normal {
 }
 
 .info {
-    width: 43%;
+   /* veit ekki hvað þetta á að gera  width: 43%; */
 }
 
 /* Bilið á milli vara og infoglugga */ 
@@ -165,11 +153,13 @@ h2.h2-normal {
 /* myndir í info gluggum */
 .first {
     background-image: url(../img/plastics.jpg);
+    background-size: contain;
     background-repeat: no-repeat;
 }
 
 .fourth {
     background-image: url(../img/bakan.jpg);
+      background-size: contain;
     background-repeat: no-repeat;
 }
 
@@ -177,56 +167,6 @@ h2.h2-normal {
 p.info-text {
     font-size: 30px;
 }
-
-/* Er í einhverju veseni með að koma iconunum í vertical align middle */
-.main-footer {
-    height: 70px;
-    background-color: #BDCECF;
-    margin-top: 90px;
-    width:100%;
-    vertical-align: middle; /* Skoða hvað veldur að þetta virkar ekki */
-   
-   
-}
-.footer-content{
-    display: flex;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer-mynd {
-    background-size: cover;
-    height: 29px;
-    width: 29px;
-    margin: 0 7px;
-}
-.twitter{
-    background-image: url('../img/twitter.png');
-}
-.facebook{
-    background-image: url('../img/facebook.png');
-}
-.instagram{
-    background-image: url('../img/instagram.png');
-}
-.pinterest{
-    background-image: url('../img/pinterest.png');
-}
-.twitter:hover{
-    background-image: url('../img/twitter_hover.png');
-}
-.facebook:hover{
-    background-image: url('../img/facebook_hover.png');
-}
-.instagram:hover{
-    background-image: url('../img/instagram_hover.png');
-}
-.pinterest:hover{
-    background-image: url('../img/pinterest_hover.png');
-}
-
 
 
 /* Vörum skipt niður í flex */
@@ -265,6 +205,36 @@ p.info-text {
     justify-content: center;
     max-width: 1400px;
 }
+.test{
+    margin:0 auto;
+}
+
+/* About mynd */
+.about-dummy {
+    background-image: url(../img/about_dummy.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+/* Blog mynd */
+.blog-dummy {
+    background-image: url(../img/blog_dummy.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 150vh;
+}
+
+/* Sign mynd */
+.signin-dummy {
+    background-image: url(../img/signin_dummy.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
 
 /* Fyrsta media query kemur þegar fyrsti vörugluggi fellur niður */
 @media (max-width:1220px) {
@@ -300,13 +270,10 @@ p.info-text {
 /* 600px er til að laga other content á forsíðu */
 @media (max-width:600px) {
     .info {
-        min-width: 0;
-        width: auto;
+      width: 100%;
     }
-
-    .f-mynd {
-        width: 100%;
-    }
+  
+   
 
 }
 

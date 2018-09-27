@@ -48,7 +48,11 @@ a svg:hover #cart-svg {
 .dropdown-content a:hover ,
 .nav_icon:hover, li a:hover,
 .btn-green:hover,
-.btn:hover { 
+.btn:hover,
+.footer-mynd,
+.checkout_btn,
+.cont_shop_btn,
+.buttons button { 
   transition: 200ms;
   transition-timing-function: ease-in-out;
   -webkit-transition: 200ms;
@@ -138,6 +142,54 @@ background-image: url(../img/signin_hover.png);
 	display: none;
 }
 
+/* Er í einhverju veseni með að koma iconunum í vertical align middle */
+.main-footer {
+    height: 70px;
+    background-color: #BDCECF;
+    width:100%;
+	vertical-align: middle;
+   }
+.footer-content{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-mynd {
+    background-size: cover;
+    height: 29px;
+    width: 29px;
+    margin: 0 7px;
+}
+
+.twitter{
+    background-image: url('../img/twitter.png');
+}
+.facebook{
+    background-image: url('../img/facebook.png');
+}
+.instagram{
+    background-image: url('../img/instagram.png');
+}
+.pinterest{
+    background-image: url('../img/pinterest.png');
+}
+.twitter:hover{
+    background-image: url('../img/twitter_hover.png');
+}
+.facebook:hover{
+    background-image: url('../img/facebook_hover.png');
+}
+.instagram:hover{
+    background-image: url('../img/instagram_hover.png');
+}
+.pinterest:hover{
+    background-image: url('../img/pinterest_hover.png');
+}
+
+
 /* Kóði til að leiðrétta breytingar ef notaður er takki til þess að fá dropdown og síðan aftur til að fela og maður stækkar hverfur allt */
 @media(min-width: 768px){
 	.icon-holder{
@@ -162,9 +214,6 @@ background-image: url(../img/signin_hover.png);
 }
 @media(max-width: 768px){
 	
-	header nav{
-		position: relative;
-	}
 	.hamburger-icon{
 		display: inline-block;
 		position: absolute;

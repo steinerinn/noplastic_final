@@ -1,0 +1,23 @@
+.up_button a {
+	position: fixed;
+    right: 0;
+    bottom: 10px;
+	height: 70px;
+    width: 70px;
+	background-image: url(../img/up.png);
+	background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    /*
+    background-color: rgba(251, 251, 251, 0.8);
+    border-radius: 60px;
+    */
+}
+/* -------Þetta er kóði fyrir index.html-------
+    <link rel="stylesheet" href="css/button.css">
+    
+    <div class="up_button">
+        <a href=""></a>
+    </div>  
+
+/*

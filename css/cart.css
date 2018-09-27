@@ -1,8 +1,6 @@
 /* ================================= 
   Base Styles
 ==================================== */
-
-/* Typical body elements */
 /* Typical body elements */
 * {
     box-sizing: border-box;
@@ -15,48 +13,6 @@ body {
     font-family: 'Rubik', sans-serif;
 }
 
-
-
-/* Almennt fyrir h2 */
-h2.h2-centered,
-h2.h2-normal {
-    font-style: normal;
-    font-weight: 300;
-    line-height: 94px;
-    font-size: 50px;
-    color: #000000;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
-}
-
-h2.h2-centered {
-    text-align: center;
-    padding: 63px 0 59px;
-}
-
-h2.h2-normal {
-    padding: 0 0 59px;
-}
-
-.main-footer {
-    height: 70px;
-    background-color: #BDCECF;
-    /* margin-top: 90px; */
-    width:100%;
-    vertical-align: middle; /* Skoða hvað veldur að þetta virkar ekki */
-   
-   
-}
-.footer-content{
-    display: flex;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-}
-.footer-mynd {
-    height: 29px;
-    margin: 0 7px;
-}
 /***** CART SÍÐA - TABLES *****/
 
 /* efri hluti af carti "CART ITEMS" */
@@ -86,6 +42,14 @@ div.img_frame {
     border-radius: 15px;
     width: 70px;
 }
+
+/* Miðjusetja myndir í ramma í cart */
+.cart-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .cart_items td img {
     height: 55px;
 }
@@ -152,7 +116,7 @@ td.quantity_remove {
 }
 .cart_total tr td, th {
     border-top: 2px solid #DDBFBD;
-    padding: 5px 5px;
+    padding: 5px 10px;
 }
 .final_total {
     text-align: left;
@@ -174,9 +138,9 @@ td.quantity_remove {
     padding-bottom: 20px;
 }
 .cont_shop_btn{
-    color: #DDBFBD;
+    color: #fff;
     padding: 10px 15px;
-    background-color: #fff;
+    background-color: #DDBFBD; /**/
     border: 3px solid #DDBFBD;
     border-radius: 20px;
     font-size: 20px;
@@ -184,8 +148,8 @@ td.quantity_remove {
     text-transform: uppercase;
 }
 .cont_shop_btn:hover{
-    background-color: #DDBFBD;
-    color: #fff;
+    background-color: #fff;
+    color: #DDBFBD; /**/
 }
 .checkout_btn{
     color: #fff;
@@ -202,31 +166,41 @@ td.quantity_remove {
     color: #DDBFBD;
 }
 
+/* Fjarlægja link defaults */
+td a {
+    color: #363636;
+}
+
+td a:hover {
+    text-decoration: underline;
+}
+
+/* Footer hegðun frábrugðin hinum síðum. Overridar navbar.css */
+.main-footer {
+	position: absolute;
+	bottom: 0px;
+   }
+
 /* Fyrsta media query kemur þegar fyrsti vörugluggi fellur niður */
 @media (max-width:1220px) {
 
     .voru-content {
         flex-direction: column;
     }
-
     /* Röðun á efni í other content */
     .first {
         order: -2; /* Passa að þetta sé efst */
     }
-
     .second {
         order: -1; /* Passa að þetta koma á eftir first */
         padding-left: 0px; /* Fjarlægi padding svo textinn verðir eins og í third */
     }
-
     .third { 
         order: 1; /* Passa að þetta verða á eftir fourth, verði neðst */
     }
-
     .fourth {
         order: 0; /* Passa að þetta verði á eftir second */
     }
-
     .title-button {
         padding: 15% 0 0;
     }
@@ -273,6 +247,5 @@ td.quantity_remove {
         font-size: 45px;
     }
 }
-@media (max-width:450px) {
 
-}
+

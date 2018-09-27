@@ -1,0 +1,138 @@
+
+/* Typical body elements */
+* {
+    box-sizing: border-box;
+    /* Undirlína ofl teknir af links */
+    text-decoration: none;
+}
+/* Font family yfir allar síður */
+body {
+    font-family: 'Rubik', sans-serif;
+}
+/* --------------Flex BEGINNING ----------------*/
+/* Child af voru-content */
+.vara {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 552px;
+    width: 280px;
+    margin: 12px 10px;
+}
+.second {
+    padding-top: 70px;
+}
+/* Heitir hér buy en er bæði kaupa og read more hnappaútlit */
+.buy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Upplýsingatexti undir vörum */
+.other-content {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    align-self: center;
+    margin: auto;
+    justify-content: center;
+}
+/* --------------Flex END ----------------*/
+/* Almennt fyrir h2 */
+h2 {
+    font-style: normal;
+    font-weight: 300;
+    line-height: 94px;
+    font-size: 50px;
+    color: #000000;
+    text-align: center;
+    margin-top: 100px;
+}
+/* Bleikur takkarnir stórir  */
+.btn-holder{
+    margin:0 auto;
+}
+.btn-holder .btn{
+    color: #fff;
+    padding: 10px 25px;
+    background-color: #DDBFBD;
+    border: 3px solid #DDBFBD;
+    border-radius: 20px;
+    font-size: 24px;
+}
+.btn-holder .btn:hover{
+    background-color: white;
+    color: #DDBFBD;
+}
+ /* Stillingar á vöruglugga */
+.vara {
+    padding-top: 20px;  /* Svo vörurnar klessist ekki við rammann á top */
+    border: 3px solid #DDBFBD;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+.vara:hover {
+    padding-top: 16px; /* Stoppar hökt í innihaldi þegar hoverað er yfir */
+    border: 7px solid #DDBFBD;
+}
+.vara-text,
+.vara-price {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    font-size: 24px;
+    text-align: center;
+    color: #000000;
+}
+.vara-price {
+    font-weight: normal;
+    margin-bottom: 40px;
+}
+
+/* Vörum skipt niður í flex */
+.voru-content-duo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/* Stillingar á myndum í ramma */
+.vara-mynd {
+    align-self: center; /* kemur í veg fyrir að myndit "strekkist" */
+    height: 300px; /* Myndir voru of stórar */
+    margin-bottom: 30px; /* Ýta takka aðeins frá verðinu */
+    outline: none;
+}
+/* Safn af vörum með verðmiða */
+.voru-content {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    align-self: center;
+    margin: auto;
+    justify-content: center;
+}
+.vara-texti {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin: auto;
+    justify-content: center;
+    max-width: 1400px;
+}
+
+.vara-texti {
+    padding-bottom: 30px;
+}
+
+/* Fyrsta media query kemur þegar fyrsti vörugluggi fellur niður */
+@media (max-width:1220px) {
+    .voru-content,
+    .other-content {
+        flex-direction: column;
+    }
+    .second {
+    padding-top: 0;
+    }
+}    

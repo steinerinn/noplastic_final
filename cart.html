@@ -6,10 +6,10 @@
         <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,700" rel="stylesheet">
         <link rel="icon" href="img/logo_icon.png">
         <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/styles_heida.css">
-         <link rel="stylesheet" href="css/flex.css">
-         <link rel="stylesheet" type="text/css" href="css/navbar.css">
-          <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" type="text/css" href="css/navbar.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/cart.css">
+
     </head>
     
     <body id="master">
@@ -18,11 +18,11 @@
             <div class="nav_content">
                 <ul class="first-nav-list close"">
                    <div class="dropdown">
-                      <li class=""><a href="vorur.html">Products</a></li>
+                      <li class=""><a href="products.html">Products</a></li>
                       <div class="dropdown-content">
-                        <a href="vorur.html">Soap</a>
-                        <a href="vorur.html">Brushes</a>
-                        <a href="vorur.html">Sponges</a>
+                        <a href="products.html">Soap</a>
+                        <a href="products.html">Brushes</a>
+                        <a href="products.html">Sponges</a>
                       </div>
                     </div>
 
@@ -51,6 +51,115 @@
     </header>
         <!-- main-container heldur utan um allt og passar að það sé ekki meira en 1440px. -->
        
+        <section class="cart_container">
+            <div>
+                <h2>Cart</h2>
+            </div>
+            <table class="cart_items">
+                <tr>
+                    <th class="product" colspan="2">Product</th>
+                    <th class="price">Price</th>
+                    <th class="quantity" colspan="3">Quantity</th>
+                    <th class="total" colspan="2">Total</th>
+                </tr>
+                <tr>
+                    <td class="product_img">
+                        <a href="product-info.html">
+                            <div class="img_frame">
+                                <div class="cart-center">
+                                        <img src="img/tannb_sv.png">
+                                </div>
+                            </div>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="product-info.html">
+                            Bamboo brush
+                        </a>
+                    </td>
+                    <td class="price">$ 10</td>
+                    <td class="quantity_remove">-</td>
+                    <td class="quantity">
+                        <p class="quantity">2</p>
+                    </td>
+                    <td class="quantity_add">+</td>
+                    <td class="total">$ 20</td>
+                </tr>
+                <tr>
+                    <td class="product_img">
+                        <a href="product-info.html">
+                            <div class="img_frame">
+                                <div class="cart-center">
+                                    <img src="img/sponge.png">
+                                </div>
+                            </div>
+                        </a>
+                    </td>
+                    <td>
+                            <a href="product-info.html">
+                                Sponge
+                            </a>
+                        </td>
+                    <td class="price">$ 20</td>
+                    <td class="quantity_remove">-</td>
+                    <td class="quantity">
+                        <p class="quantity">3</p>
+                    </td>
+                    <td class="quantity_add">+</td>
+                    <td class="total">$ 60</td>
+                </tr>
+                <tr>
+                    <td class="product_img">
+                        <a href="product-info.html">
+                            <div class="img_frame">
+                                <div class="cart-center">
+                                    <img src="img/tannb_6pack.png">
+                                </div>
+                            </div>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="product-info.html">
+                            6 Pack
+                        </a>
+                    </td>
+                    <td class="price">$ 40</td>
+                    <td class="quantity_remove">-</td>
+                    <td class="quantity">
+                        <p class="quantity">1</p>
+                    </td>
+                    <td class="quantity_add">+</td>
+                    <td class="total">$ 40</td>
+                </tr>
+            </table>
+            <table class="cart_total">
+                <tr>
+                    <td class="final_total">Your Order</td>
+                    <td class="currency">$</td>
+                    <td class="order_total">120</td>
+                </tr>
+                <tr>
+                    <td class="final_total">Shipping</td>
+                    <td class="currency">$</td>
+                    <td class="order_total">10</td>
+                </tr>
+                <tr>
+                    <td class="final_total">Tax</td>
+                    <td class="currency">$</td>
+                    <td class="order_total">12</td>
+                </tr>
+                <tr>
+                    <th class="final_total">Total</th>
+                    <th class="currency">$</th>
+                    <th class="order_total">142</th>
+                </tr>
+            </table>
+        </section>
+        <div class="cart_btn_holder">
+            <a class="cont_shop_btn" href="products.html">Continue Shopping</a>
+            <a class="checkout_btn" href="checkout.html">Checkout</a>
+        </div>
+
              <footer class="main-footer">
              <div class="footer-content">
                 <a class="footer-mynd twitter" href="https://www.twitter.com" target="_blank"></a>
