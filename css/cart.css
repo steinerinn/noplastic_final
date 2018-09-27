@@ -175,11 +175,7 @@ td a:hover {
     text-decoration: underline;
 }
 
-/* Footer hegðun frábrugðin hinum síðum. Overridar navbar.css */
-.main-footer {
-	position: absolute;
-	bottom: 0px;
-   }
+
 
 /* Fyrsta media query kemur þegar fyrsti vörugluggi fellur niður */
 @media (max-width:1220px) {
