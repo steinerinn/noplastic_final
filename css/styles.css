@@ -212,7 +212,7 @@ p.info-text {
 /* About mynd */
 .about-dummy {
     background-image: url(../img/about_dummy.png);
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
@@ -221,7 +221,7 @@ p.info-text {
 /* Blog mynd */
 .blog-dummy {
     background-image: url(../img/blog_dummy.png);
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     height: 150vh;
@@ -230,10 +230,11 @@ p.info-text {
 /* Sign mynd */
 .signin-dummy {
     background-image: url(../img/signin_dummy.png);
-    background-size: cover;
+    background-size: contain;
+    background-size: 100% 100vh;
+    height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
 }
 
 /* Fyrsta media query kemur þegar fyrsti vörugluggi fellur niður */
