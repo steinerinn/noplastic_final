@@ -18,7 +18,7 @@ body {
 /* efri hluti af carti "CART ITEMS" */
 
 .cart_container {
-    margin-top: 75px;
+    padding-top: 75px;
 }
 .cart_container h2 {
     margin-top: 100px;
@@ -175,11 +175,7 @@ td a:hover {
     text-decoration: underline;
 }
 
-/* Footer hegðun frábrugðin hinum síðum. Overridar navbar.css */
-.main-footer {
-	position: absolute;
-	bottom: 0px;
-   }
+
 
 /* Fyrsta media query kemur þegar fyrsti vörugluggi fellur niður */
 @media (max-width:1220px) {
