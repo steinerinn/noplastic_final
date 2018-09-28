@@ -31,9 +31,7 @@ body {
     padding-left: 50%;
 }
 
-#front-button {
-    border: 1px solid #C2A2A0;
-}
+
 
 /* Heading texti í forsíðumynd mynd */
  h1.front-title-text{
@@ -88,14 +86,15 @@ h2.h2-normal {
 .btn-holder .btn{
     color: #fff;
     padding: 10px 25px;
-    background-color: #DDBFBD;
-    border: 3px solid #DDBFBD;
-    border-radius: 20px;
+    background-color: #5D9699;
+    border-radius: 15px;
     font-size: 24px;
 }
 .btn-holder .btn:hover{
-    background-color: white;
-    color: #DDBFBD;
+    background-color: #fff !important;
+    color: #5D9699;
+    background-color: #5D9699;
+    border:3px solid #5D9699;
 }
 /*Grænu takkarnir stórir */
 
