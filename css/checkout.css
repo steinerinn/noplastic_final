@@ -7,13 +7,10 @@
 body {
     font-family: 'Rubik', sans-serif;
 }
-
 .container {
     display: flex;
     flex-direction: row;
-
     padding-top: 80px;
-
 }
 /* --------------White Container-------------*/ 
 .white {
@@ -245,9 +242,6 @@ tbody tr.cart_total td {
     align-items: center;
     justify-content: center;
 }
-.font-weight button {
-    font-weight: 300;
-}
 /*--------------Pink Total--------------*/ 
 .bottom_table {
     width: 90%;
@@ -299,21 +293,6 @@ tbody tr.cart_total td {
     }
     .back_btn {
        margin-bottom: 20px;
-    }
-    .white_content button {
-        border-radius: 20px;
-        padding: 10px;
-        background-color: #DDBFBD;
-        color: #fff;
-        font-size: 16px;
-        text-transform: uppercase; 
-        border: 3px solid #DDBFBD; 
-    }
-    .white_content button[type=submit] {
-        margin-left: 0;
-    }
-     .white_content button[type=back] {
-        margin-bottom: 15px;
     }
 }
 @media only screen and (max-width: 480px) {
