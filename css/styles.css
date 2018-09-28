@@ -302,14 +302,32 @@ p.info-text {
     .info {
       width: 100%;
     }
-    .second, .third, .forth{
+    /*.second, .third, .forth{
         padding-bottom: 350px;
+    }*/
+      /* Ásdís------laga mobile font*/
+   h2.h2-centered {
+     padding: 20px 0 15px; 
+     font-size: 35px;  
     }
-  
-   
-
+    .other-content {
+        padding: 0;
+    }
+   h2.h2-normal  {
+      font-size: 35px;  
+    }
+    p.info-text {
+     font-size: 25px;    
+    }
+    .info {
+     padding-bottom: 0;
+    }
+    .second,
+    .third {
+        margin-top: -300px;
+    }
+     /* Ásdís------laga mobile font*/
 }
-
 @media (max-width:500px) {
     /* Verið að staðsetja og breyta forsíðutexta á forsíðumynd */
     h1.front-title-text {
