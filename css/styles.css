@@ -98,31 +98,19 @@ h2.h2-normal {
 .btn-holder{
     margin:0 auto;
 }
-#front-button{
-    color: #fff;
-    padding: 10px 15px;
-    background-color:#5D9699;
-    border-radius: 20px;
-    font-size: 24px;
-    font-weight: 300;
-}
-#front-button:hover{
-    background-color: #fff;
-    color: #5D9699;
-    border: 3px solid #5D9699;
-}
 .btn-holder .btn{
     color: #fff;
-    padding: 10px 25px;
+    padding: 10px 15px;
     background-color: #DDBFBD;
     border-radius: 20px;
     font-size: 24px;
+    font-weight: 300;
+    border:3px solid #DDBFBD;
 }
 .btn-holder .btn:hover{
     background-color: #fff !important;
     color: #DDBFBD;
 
-    background-color: #fff;
 
     border:3px solid #DDBFBD;
 }
