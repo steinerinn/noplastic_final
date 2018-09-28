@@ -48,9 +48,7 @@ header {
 	margin:5px;
 	margin-right: 40px;
 }
-.small-img:hover{
-	border: 4px solid #DDBFBD;
-}
+
 .main-img{
 	margin-top:5px;
 	height: auto;
@@ -61,11 +59,7 @@ header {
 	width: 70%;
 
 }
-.main-img:hover{
-	border: 6px solid #DDBFBD;
-	
 
-}
 .txt-holder{
 	margin-left: 10px;
 	
