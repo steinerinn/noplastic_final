@@ -54,11 +54,12 @@ h2 {
 }
 .btn-holder .btn{
     color: #fff;
-    padding: 10px 25px;
+    padding: 10px 15px;
     background-color: #DDBFBD;
     border: 3px solid #DDBFBD;
     border-radius: 20px;
     font-size: 24px;
+    font-weight: 300;
 }
 .btn-holder .btn:hover{
     background-color: white;
@@ -67,13 +68,13 @@ h2 {
  /* Stillingar á vöruglugga */
 .vara {
     padding-top: 20px;  /* Svo vörurnar klessist ekki við rammann á top */
-    border: 3px solid #DDBFBD;
+    border: 3px solid #C2A2A0;
     box-sizing: border-box;
     border-radius: 20px;
 }
 .vara:hover {
     padding-top: 16px; /* Stoppar hökt í innihaldi þegar hoverað er yfir */
-    border: 7px solid #DDBFBD;
+    border: 7px solid #C2A2A0;
 }
 .vara-text,
 .vara-price {

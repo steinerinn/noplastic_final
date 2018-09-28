@@ -44,7 +44,7 @@ header {
 .small-img{
 	height: 120px;
 	border: 2px solid #DDBFBD;
-	border-radius: 5%;
+	border-radius: 20%;
 	margin:5px;
 	margin-right: 40px;
 }
@@ -53,7 +53,7 @@ header {
 	margin-top:5px;
 	height: auto;
 	border: 2px solid #DDBFBD;
-	border-radius: 5%;
+	border-radius: 10%;
 	margin-right: 40px;
 	min-width: 300px;
 	width: 70%;
@@ -110,11 +110,12 @@ header {
 }
 .add-btn{
 	color: #fff;
-    padding: 5px 10px;
-    background-color: #DDBFBD;;
-     border: 1px solid #DDBFBD;
-    border-radius: 25px;
-    font-size: 24px;
+    padding: 10px 15px;
+    background-color: #DDBFBD;
+    border: 3px solid #DDBFBD;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 300;
 }
 .add-btn:hover{
 	background-color: #fff;
@@ -130,7 +131,7 @@ header {
 #you-may-also-like{
 	margin-top: 50px;
 	min-height: 400px;
-	background-color: rgba(221, 191, 189, 0.3);
+	background-color: #DDBFBD;
 	width: 100%;
 
 
