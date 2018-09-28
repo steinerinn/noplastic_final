@@ -265,10 +265,10 @@ tbody tr.cart_total td {
 .bottom_table tr td, th {
     border-top: 2px solid #787878; 
 }
-/* --------------MEDIA--------------*/ 
-@media only screen and (max-width: 930px) {
-    .white_header {
-    width: 70%; 
+/* --------------MEDIA--------------*/
+@media only screen and (max-width: 1203px) {
+    .white_content {
+        width: 89%;
     }
 }
 @media only screen and (max-width: 870px) {
@@ -280,24 +280,43 @@ tbody tr.cart_total td {
     .white {
         width: 100%;
     }
-    .white_content button {
-        font-size: 16px; 
-        padding: 0.5em;
-    }
     .white_content {
     width: 90%;
-    }
-    .white_header {
-    width: 70%; 
     }
     .pink_content {
         padding-top: 30px;
         padding-bottom: 30px;
     }
 }
+@media only screen and (max-width: 559px) {
+    .buttons {
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .white_content button {
+        border-radius: 20px;
+        padding: 10px;
+        background-color: #DDBFBD;
+        color: #fff;
+        font-size: 16px;
+        text-transform: uppercase; 
+        border: 3px solid #DDBFBD; 
+    }
+    .white_content button[type=submit] {
+        margin-left: 0;
+    }
+     .white_content button[type=back] {
+        margin-bottom: 15px;
+    }
+}
 @media only screen and (max-width: 480px) {
     .bottom_table {
     width: 100%;
+    }
+    .white_header {
+        width: 70%;
     }
     .white_header img {
         width: 30px;
