@@ -132,14 +132,14 @@ h2.h2-normal {
  /* Stillingar á vöruglugga */
 .vara {
     padding-top: 20px;  /* Svo vörurnar klessist ekki við rammann á top */
-    border: 3px solid #DDBFBD;
+    border: 3px solid #C2A2A0;
     box-sizing: border-box;
     border-radius: 20px;
 }
 
 .vara:hover {
     padding-top: 16px; /* Stoppar hökt í innihaldi þegar hoverað er yfir */
-    border: 7px solid #DDBFBD;
+    border: 7px solid #C2A2A0;
 }
 
 .vara-text,
