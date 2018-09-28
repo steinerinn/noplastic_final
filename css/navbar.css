@@ -45,6 +45,7 @@ a svg:hover #sign-svg,
 a svg:hover #cart-svg {
     fill: #DDBFBD;
 }
+#front-button, .add-btn,
 .dropdown-content a:hover ,
 .nav_icon:hover, li a:hover,
 .btn-green:hover,
