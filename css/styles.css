@@ -27,20 +27,35 @@ body {
 .title-button {
     display: flex;
     flex-direction: column;
-    padding-top: 52vh;
-    padding-left: 50%;
+    padding-top: 20vh;
 }
-
-
+.btn-holder-front {
+    margin: 0 auto;
+}
+.btn-holder-front .btn{
+    color: #fff;
+    padding: 10px 25px;
+    background-color: #5D9699;
+    border:3px solid #5D9699;
+    border-radius: 20px;
+    font-size: 24px;
+    font-weight: 300;
+}
+.btn-holder-front .btn:hover{
+    background-color: #fff !important;
+    color: #5D9699;
+    background-color: #fff;
+    border:3px solid #5D9699;
+}
 
 /* Heading texti í forsíðumynd mynd */
  h1.front-title-text{
-    font-style: normal;
-    font-weight: normal;
+    text-transform: uppercase;
+    font-weight: 300;
     line-height: 120px;
     font-size: 64px;
     text-align: center;
-    color: #787878;
+    color: #363636;
     margin-bottom: 20px;
 }
 
@@ -85,26 +100,29 @@ h2.h2-normal {
 }
 .btn-holder .btn{
     color: #fff;
-    padding: 10px 25px;
-    background-color: #5D9699;
-    border-radius: 15px;
+    padding: 10px 15px;
+    background-color: #DDBFBD;
+    border:3px solid #DDBFBD;
+    border-radius: 20px;
     font-size: 24px;
+    font-weight: 300;
 }
 .btn-holder .btn:hover{
     background-color: #fff !important;
-    color: #5D9699;
-    background-color: #5D9699;
-    border:3px solid #5D9699;
+    color: #DDBFBD;
+    background-color: #fff;
+    border:3px solid #DDBFBD;
 }
 /*Grænu takkarnir stórir */
 
 .btn-holder-green .btn-green{
     color: #fff;
-    padding: 10px 35px;
+    padding: 10px 15px;
     background-color: #5D9699;
     border: 3px solid #5D9699;
     border-radius: 20px;
-    font-size: 24px;
+    font-size: 20px;
+    font-weight: 300;
 }
 .btn-holder-green .btn-green:hover{
     background-color: white;
@@ -147,6 +165,7 @@ h2.h2-normal {
 /* Bilið á milli vara og infoglugga */ 
 .other-content {
     padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 /* myndir í info gluggum */
@@ -262,9 +281,7 @@ p.info-text {
         order: 0; /* Passa að þetta verði á eftir second */
     }
 
-    .title-button {
-        padding: 100px 0 0;
-    }
+    
 }
 
 /* 600px er til að laga other content á forsíðu */
@@ -280,13 +297,13 @@ p.info-text {
 
 }
 
-@media (max-width:420px) {
+@media (max-width:500px) {
     /* Verið að staðsetja og breyta forsíðutexta á forsíðumynd */
     h1.front-title-text {
         font-size: 44px;
         line-height: 60px;
-        margin-bottom: 20px;
-        padding-top:80px;
+        margin-bottom: 35px;
+        padding-top:40px;
     }
 
 }
