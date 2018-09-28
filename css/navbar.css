@@ -59,6 +59,10 @@ a svg:hover #cart-svg {
   -webkit-transition-timing-function: ease-in-out;
 }
 
+/* Gluggar í product-info síðu gerðir hvítir */
+.b-color {
+	background-color: white;
+}
 
 .dropdown {
     position: relative;
