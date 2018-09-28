@@ -17,11 +17,9 @@ body {
 
 /* efri hluti af carti "CART ITEMS" */
 
-.cart_container {
-    padding-top: 75px;
-}
+
 .cart_container h2 {
-    margin-top: 100px;
+    margin-top: 110px;
     margin-bottom: 20px;
     font-size: 50px;
     font-weight: 300;
