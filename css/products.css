@@ -54,11 +54,12 @@ h2 {
 }
 .btn-holder .btn{
     color: #fff;
-    padding: 10px 25px;
+    padding: 10px 15px;
     background-color: #DDBFBD;
     border: 3px solid #DDBFBD;
     border-radius: 20px;
     font-size: 24px;
+    font-weight: 300;
 }
 .btn-holder .btn:hover{
     background-color: white;
