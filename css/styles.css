@@ -83,18 +83,29 @@ h2.h2-normal {
 .btn-holder{
     margin:0 auto;
 }
-.btn-holder .btn{
+#front-button{
     color: #fff;
     padding: 10px 25px;
     background-color: #5D9699;
     border-radius: 15px;
     font-size: 24px;
 }
+#front-button:hover{
+    background-color: #fff;
+    color: #5D9699;
+    border: 3px solid #5D9699;
+}
+.btn-holder .btn{
+    color: #fff;
+    padding: 10px 25px;
+    background-color: #DDBFBD;
+    border-radius: 20px;
+    font-size: 24px;
+}
 .btn-holder .btn:hover{
     background-color: #fff !important;
-    color: #5D9699;
-    background-color: #5D9699;
-    border:3px solid #5D9699;
+    color: #DDBFBD;
+    border:3px solid #DDBFBD;
 }
 /*Grænu takkarnir stórir */
 
