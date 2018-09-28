@@ -145,26 +145,24 @@ form .form_rows input {
     width: 48%;
     margin: 0;
 }
-/*--------------White BUTTON--------------*/ 
-.buttons {
+/*--------------White BUTTON--------------*/
+.btn_white {
     margin-bottom: 70px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-.white_content button {
+.btn_white a {
     border-radius: 20px;
-    padding: 10px;
+    padding: 10px 15px;
     background-color: #DDBFBD;
     color: #fff;
-    font-size: 16px;
+    font-size: 20px;
+    font-weight: 300;
     text-transform: uppercase; 
     border: 3px solid #DDBFBD; 
 }
-.white_content button[type=submit] {
-    margin-left: 20px;
-}
-.white_content button:hover {
+.btn_white a:hover {
     background-color: #fff;
     color: #DDBFBD;
     border: 3px solid #DDBFBD;
@@ -247,6 +245,9 @@ tbody tr.cart_total td {
     align-items: center;
     justify-content: center;
 }
+.font-weight button {
+    font-weight: 300;
+}
 /*--------------Pink Total--------------*/ 
 .bottom_table {
     width: 90%;
@@ -289,11 +290,15 @@ tbody tr.cart_total td {
     }
 }
 @media only screen and (max-width: 559px) {
-    .buttons {
+    .btn_white {
         margin-bottom: 40px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        text-align: center;
+    }
+    .back_btn {
+       margin-bottom: 20px;
     }
     .white_content button {
         border-radius: 20px;

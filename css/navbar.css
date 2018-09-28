@@ -52,7 +52,7 @@ a svg:hover #cart-svg {
 .footer-mynd,
 .checkout_btn,
 .cont_shop_btn,
-.buttons button,
+.btn_white a:hover,
 .add-btn { 
   transition: 200ms;
   transition-timing-function: ease-in-out;
