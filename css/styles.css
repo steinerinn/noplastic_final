@@ -101,8 +101,7 @@ h2.h2-normal {
 #front-button{
     color: #fff;
     padding: 10px 15px;
-    background-color: #DDBFBD;
-    border:3px solid #DDBFBD;
+    background-color:#5D9699
     border-radius: 20px;
     font-size: 24px;
     font-weight: 300;
@@ -122,10 +121,9 @@ h2.h2-normal {
 .btn-holder .btn:hover{
     background-color: #fff !important;
     color: #DDBFBD;
-<<<<<<< HEAD
-=======
+
     background-color: #fff;
->>>>>>> eb5159e96a54d978e429a3227498eb6f07563752
+
     border:3px solid #DDBFBD;
 }
 /*Grænu takkarnir stórir */
